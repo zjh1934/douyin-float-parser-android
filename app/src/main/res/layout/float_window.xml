@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:id="@+id/bubble"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/bg_bubble">
+
+        <ImageView
+            android:id="@+id/bubble_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_bubble_arrow" />
+
+        <ProgressBar
+            android:id="@+id/spinner"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@android:color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_input"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        android:background="@drawable/bg_panel"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/link_input"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textColor="#F2F5FA"
+            android:textColorHint="#66FFFFFF"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:inputType="textUri"
+            android:imeOptions="actionGo"
+            android:importantForAutofill="no" />
+
+        <ImageButton
+            android:id="@+id/btn_go"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_button"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_go" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_result"
+        android:layout_width="336dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@drawable/bg_panel"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/result_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_result"
+            android:textColor="#E8EEF7"
+            android:textSize="11sp"
+            android:typeface="monospace"
+            android:gravity="top|start"
+            android:padding="7dp"
+            android:scrollbars="vertical"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:textIsSelectable="true" />
+
+        <ImageButton
+            android:id="@+id/btn_copy"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_button"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_copy" />
+    </LinearLayout>
+
+</LinearLayout>
