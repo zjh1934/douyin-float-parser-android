@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">抖音悬浮解析</string>
+    <string name="notification_text">点悬浮球粘贴链接</string>
+    <string name="menu_reset">重置</string>
+    <string name="menu_exit">退出</string>
+    <string name="permission_hint">需要「显示在其他应用上层」权限，悬浮窗才能常驻。授权后会自动启动。</string>
+    <string name="permission_button">去授权</string>
+</resources>
